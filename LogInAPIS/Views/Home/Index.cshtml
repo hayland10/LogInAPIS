@@ -1,0 +1,38 @@
+﻿@model LogIn
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form>
+<div>
+    <h1 class="ali">BIENVENIDO A LA AMT</h1>
+</div>
+<br />
+<div>
+    <div>
+        <label >
+            USUARIO:
+        </label>
+        <input class="form-control" asp-for="Usuario"/>
+    </div>
+    <br />
+    <div >
+        <label>
+            Contraseña:
+        </label>
+        <input class="form-control" asp-for="Contraseña" type="password"/>
+        
+    </div>
+    <br />
+    <div>
+        <select class="form-select" asp-for="Categoria">
+            <option value="ADMIN"> Admin</option>
+            <option value="Cliente"> Cliente</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-primary"> ACCEDER </button>
+    </div>
+
+</div>
+</form>
